@@ -31,10 +31,6 @@ class MainActivity : AppCompatActivity() {
         val appBarConfiguration = builder.build()
         //讓工具列使用appBarConfiguration
         toolbar.setupWithNavController(navController, appBarConfiguration)
-
-        //將底部導覽列接到導覽控制器
-        val bottomNavView = findViewById<BottomNavigationView>(R.id.bottom_nav)
-        bottomNavView.setupWithNavController(navController)
     }
 
     //將menu_toolbar的選單資源檔裡面的所有項目加入工具列
